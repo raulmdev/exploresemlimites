@@ -1,0 +1,256 @@
+:root {
+    --bg: #F9F4FB;
+    --white: #FFFFFF;
+
+    --pink: #B52184;
+    --purple: #312D64;
+    --purple-gradient: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 42rem;
+    background: var(--bg);
+}
+
+.hero-box img {
+    height: 23rem;
+    width: 23rem;
+}
+
+.hero-text-box {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--pink);
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.subtitle {
+    color: var(--purple);
+    font-size: 1.25rem;
+    line-height: 25px;
+}
+
+.hero-text-box img {
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+main {
+    height: 77rem;
+    background: var(--purple-gradient);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 49px;
+}
+
+.planet-card {
+    width: 22rem;
+    height: 21rem;
+    background: var(--white);
+    border-radius: 1.2rem;
+
+    padding: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    gap: 1rem;
+  
+}
+
+.planet-card img {
+    width: 5rem;
+    height: 5rem;
+
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.title {
+    font-size: 1.8rem;
+    color: var(--pink);
+    font-style: normal;
+    font-weight: 900;
+
+    top: 12px;
+    position: relative;
+}
+
+.text {
+    font-size: 1rem;
+    color: var(--purple);
+    font-style: normal;
+    font-weight: 600;
+}
+
+section {
+    height: 35rem;
+    background: #F9F4FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--pink);
+    font-style: normal;
+    font-weight: 900;
+    margin-right: 78px;
+}
+
+
+form {
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.form-input {
+    width: 21.7rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1.5px solid #312D64;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-input input {
+   border: none;
+   
+    width: 282px;
+    height: 16px;
+    margin-right: 15px;
+    outline: none;
+    background: #F9F4FB;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+
+    color: #312D64;
+
+}
+
+.form-input input::placeholder {
+    background: #F9F4FB;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+
+    color: #312D64;
+
+    opacity: 1;
+}
+
+.fa-user {
+    color: var(--pink);
+}
+
+.fa-at {
+    color: var(--pink);
+}
+
+textarea {
+    padding: 12px 16px 16px;
+    gap: 10px;
+
+    outline: none;
+    font-size: 1rem;
+    color: #312D64;
+
+    width: 21.5rem;
+    height: 7.8rem;
+    background: #F9F4FB;
+
+    border: 1.5px solid #312D64;
+    border-radius: 16px;
+}
+
+textarea::placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 140%;
+    background: #F9F4FB;
+
+    color: #312D64;
+}
+
+button {
+    background: var(--purple-gradient);
+    border-radius: 1rem;
+    border: none;
+
+    width: 9.4rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 24px;
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+
+
+footer a {
+    height: 4.8rem;
+    background: var(--purple-gradient);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size:1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
